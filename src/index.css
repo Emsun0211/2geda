@@ -1,0 +1,81 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body {
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+#main_layout{
+  display: grid;
+
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1.4fr 1.3fr 0.8fr;
+   grid-template-areas: 
+    'sidebar nav nav nav nav'
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    ;
+}
+
+#side_bar{
+grid-area: sidebar;
+background-color: #4F0DA3;
+}
+
+
+
+#nav_bar{
+  grid-area: nav;
+  background-color: white;
+}
+
+#main_content{
+grid-area: main;
+background-color: 
+#F5F5F5;
+padding: 0.5rem;
+
+}
+.main_content_wrapper{
+  background-color: 
+  #F5F5F5;
+  padding: 0.5rem;
+}
+
+
+
+@media only screen and (max-width :680px) {
+  #main_layout{
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr;
+      grid-template-areas: 
+      "nav"
+      "main"
+      "main"
+      "main"
+      "main"
+      "main"
+      ;
+      place-content: center;
+      place-items: center;
+  }
+  #main_content{
+    grid-area: main;
+    background-color: 
+    #F5F5F5;
+    padding: 0;
+    
+    }
+
+}
