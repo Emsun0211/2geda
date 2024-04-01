@@ -30,11 +30,11 @@ const sideBarList = [
     icon: <BsShopWindow size={24}/>,
     url: '/'
 },
-    {
-    name: "Business Directory",
-    icon: <FaBook  size={24}/> ,
-    url: '/'
-},
+//     {
+//     name: "Business Directory",
+//     icon: <FaBook  size={24}/> ,
+//     url: '/'
+// },
     {
     name: "Chat",
     icon: <BsChatDots size={24}/> ,

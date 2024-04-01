@@ -6,7 +6,7 @@ import Sidebar from "../components/Sidebar";
 function MainLayout({ children }) {
 	return (
 		<main className="grid grid-cols-1 sm:grid-cols-5 ">
-			<div className="col-span-1 bg-[#4F0DA3] hidden sm:block">
+			<div className=" bg-[#4F0DA3] hidden sm:block w-[100%]">
 				<Sidebar />
 			</div>
 
