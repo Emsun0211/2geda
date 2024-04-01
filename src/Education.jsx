@@ -240,12 +240,12 @@ export default Education
 function ResourcesCard({resource}){
  const { id, about, img, link } = resource
  return (
-     <a href={link} target="_blank" rel="noopener noreferrer" key={id} className='flex flex-col items-center justify-center gap-2 px-2 py-3 mb-3 no-underline bg-gray-200 rounded-lg lg:justify-between lg:flex-row'>
+     <a href={link} target="_blank" rel="noopener noreferrer" key={id} className='flex flex-col items-center justify-center gap-2 px-2 py-3 mb-3 no-underline bg-gray-200 rounded-lg lg:justify-between lg:flex-row '>
          <div className='md:w-[20%] w-full flex justify-center items-center'>
              <img src={img} alt="" className='md:w-[80%] h-full' />
          </div>
-         <div className='w-[80%] flex items-center'>
-             <p className="text-[0.9rem]">{about}</p>
+         <div className='w-full md:w-[80%] flex items-center mx-auto justify-center'>
+             <p className="text-[0.9rem] text-center md:text-left">{about}</p>
          </div>
      </a>
  )
