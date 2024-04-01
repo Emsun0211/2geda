@@ -33,7 +33,7 @@ function Navbar() {
                         </div>}
                     </div>
                     <img
-                        src="src/assets/2geda_logo.svg"
+                        src="/assets/2geda_logo.svg"
                         alt="2geda_logo"
                         className="hidden sm:block"
                     />
@@ -58,7 +58,7 @@ function Navbar() {
                         <div className="flex flex-col justify-center items-center ">
                             <Avatar
                                 alt="Remy Sharp"
-                                src="src/assets/profile.svg"
+                                src="/assets/profile.svg"
                                 size={isMobile ? 8 : 16}
                             />
                             <p className="font-bold text-[0.5rem] text-center">My Profile</p>

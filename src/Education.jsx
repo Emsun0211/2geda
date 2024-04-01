@@ -13,28 +13,28 @@ const Education = () => {
             id: 1,
             acronomy: "JAMB",
             examBody: "Joint Admission and Matriculation Board",
-            img: "src/assets/JAMB.svg",
+            img: "/assets/JAMB.svg",
             link: "https://www.jamb.gov.ng/"
         },
         {
             id: 2,
             acronomy: "POST UTME",
             examBody: "University Entrance Examinations",
-            img: "src/assets/JAMB.svg",
+            img: "/assets/JAMB.svg",
             link: "https://www.jamb.gov.ng/"
         },
         {
             id: 3,
             acronomy: "WAEC",
             examBody: "West African Examination Council",
-            img: "src/assets/waec.svg",
+            img: "/assets/waec.svg",
             link: "https://www.waecnigeria.org/"
         },
         {
             id: 4,
             acronomy: "NECO",
             examBody: "National Examinational Council",
-            img: "src/assets/neco.svg",
+            img: "/assets/neco.svg",
             link: "https://neco.gov.ng/"
         },
     ]
@@ -44,31 +44,31 @@ const Education = () => {
         {
             id: 1,
             about: "Nigerian Defence Academy entrance examination past questions 2012 to 2022",
-            img: "src/assets/nda.svg",
+            img: "/assets/nda.svg",
             link: "https://nda.edu.ng/"
         },
         {
             id: 2,
             about: "JAMB past questions 2012-2022",
-            img: "src/assets/JAMB.svg",
+            img: "/assets/JAMB.svg",
             link: "https://www.jamb.gov.ng/"
         },
         {
             id: 3,
             about: "LAUTECH Post-UTME screening form is out!",
-            img: "src/assets/LAUTECH.svg",
+            img: "/assets/LAUTECH.svg",
             link: "https://www.lautech.edu.ng/"
         },
         {
             id: 4,
             about: "UNILAG Post- UTME past questions 2012 to 2023",
-            img: "src/assets/unilag.svg",
+            img: "/assets/unilag.svg",
             link: "https://unilag.edu.ng/"
         },
         {
             id: 5,
             about: "UI Post- UTME past questions 2012 to 2023",
-            img: "src/assets/ui.svg",
+            img: "/assets/ui.svg",
             link: "https://ui.edu.ng/"
         },
     ]
@@ -77,31 +77,31 @@ const Education = () => {
         {
             id: 1,
             about: "UNILAG admission list first batch is out!",
-            img: "src/assets/unilag.svg",
+            img: "/assets/unilag.svg",
             link: "https://unilag.edu.ng/"
         },
         {
             id: 2,
             about: "LAUTECH Post-UTME screening form is out",
-            img: "src/assets/LAUTECH.svg",
+            img: "/assets/LAUTECH.svg",
             link: "https://www.lautech.edu.ng/"
         },
         {
             id: 3,
             about: "WAEC 2023 result is out!",
-            img: "src/assets/waec.svg",
+            img: "/assets/waec.svg",
             link: "https://www.waecnigeria.org/"
         },
         {
             id: 4,
             about: "JAMB result 2023 is out!",
-            img: "src/assets/JAMB.svg",
+            img: "/assets/JAMB.svg",
             link: "https://www.jamb.gov.ng/"
         },
         {
             id: 5,
             about: "UI Post- UTME past questions 2012 to 2023",
-            img: "src/assets/ui.svg",
+            img: "/assets/ui.svg",
             link: "https://ui.edu.ng/"
         },
     ]
@@ -111,32 +111,32 @@ const Education = () => {
             id: 1,
             acronomy: "NDA",
             examBody: "Nigeria Defence Academy",
-            img: "src/assets/nda.svg",
+            img: "/assets/nda.svg",
             link: "https://nda.edu.ng/"
         },
         {
             id: 2,
             acronomy: "NABTEB",
             examBody: "National Business and Technical Examinations Board",
-            img: "src/assets/nabteb.svg",
+            img: "/assets/nabteb.svg",
             link: "https://nabteb.gov.ng/"
         },
         {
             id: 3,
             acronomy: "NIMASA",
             examBody: "Nigerian Maritime Administration and Safety Agency",
-            img: "src/assets/nimasa.svg",
+            img: "/assets/nimasa.svg",
             link: "https://nimasa.gov.ng/"
         },
         {
             id: 4,
             acronomy: "TRCN PQE",
             examBody: "Teachers Registration Council of Nigeria Professional Qualifying Examination",
-            img: "src/assets/trcn.svg",
+            img: "/assets/trcn.svg",
             link: "https://trcn.gov.ng/"
         },
     ]
-
+   
     return (
         <>
             <MainLayout>
@@ -149,9 +149,16 @@ const Education = () => {
                                 <FaArrowLeftLong />
                                 <h1 className="text-[1rem] md:text-[1.5rem] font-bold ">Education</h1>
                             </div>
-                            <div className=' '>
-                                <img src="src/assets/advertise.svg"  alt="ads" className='object-cover w-full  h-full cursor-pointer rounded-xl' />
+                            <div className='flex flex-col gap-5 justify-center items-center '>
+                                <img src="/assets/advertise.svg"  alt="ads" className='object-cover w-full  h-full cursor-pointer rounded-xl' />
+                                <div className='flex gap-2'>
+                                <div className='w-8 rounded-full h-3 bg-[#4F0DA3]'></div>
+                                <div className='w-3 rounded-[50%] h-3 border border-[#4F0DA3]'></div>
+                                <div className='w-3 rounded-full h-3 border border-[#4F0DA3]'></div>
+                                
+                             </div>
                             </div>
+                            
 
                             <div className='grid gap-4'>
                                 <h2 className="text-[1rem] md:text-[1.2rem] font-bold ">Popular examinations</h2>
@@ -166,8 +173,9 @@ const Education = () => {
                             </div>
 
                             <div className='my-3'>
-                                <img src="src/assets/quatar.svg" alt="" className='w-full h-full' />
+                                <img src="/assets/quatar.svg" alt="" className='w-full h-full' />
                             </div>
+                            
 
                             <div className='grid gap-2'>
                                 <h2 className="text-[1rem] md:text-[1.2rem] font-bold ">Other Examinations</h2>
